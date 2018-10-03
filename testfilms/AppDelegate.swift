@@ -17,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().barStyle = .black
+//        UINavigationBar.appearance().barTintColor = UIColor.white
+        
+        
+        if #available(iOS 11.0, *) {
+            UINavigationBar.appearance().prefersLargeTitles = true
+            UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.monospacedDigitSystemFont(ofSize: 28, weight: .medium)]
+        }
+        
         return true
     }
 
