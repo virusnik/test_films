@@ -21,7 +21,7 @@ class VideoVC: UIViewController {
         self.view.backgroundColor = UIColor.black
         self.title = "Video"
         
-        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height + 44
+        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         
@@ -32,7 +32,6 @@ class VideoVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         self.view.addSubview(tableView)
-        
         
     }
     
